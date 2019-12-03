@@ -1,0 +1,42 @@
+.body {
+  /* margin: 1%; */
+  border: 10px solid black;
+  
+  /* padding: 2%; */
+}
+
+
+
+/* HEADER */
+.header-section {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: center;
+  /* margin: 3%; */
+  line-height: 40vh;
+  background-color: gray;
+}
+
+
+
+
+
+/*---Projects section-----*/
+
+.projects-section {
+  display: flex;
+  
+  flex-wrap: nowrap;
+  max-width: 100vw;
+}
+
+.project-container {
+  border: 1px solid black; 
+  width: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1%;
+  
+}
