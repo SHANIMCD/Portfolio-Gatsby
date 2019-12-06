@@ -14,10 +14,11 @@ import '../styles/global.css'
 
 export default () => (
   <div className="body">
+    
+    <section className="header-section">
     <div className="nav-tings">
       <Nav />
     </div>
-    <section className="header-section">
       <Header />
       <Statement />
       <section className="footer-section">
