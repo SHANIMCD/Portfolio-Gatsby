@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default () => (
-  <div>
+  <div className="handles">
     <p>
       LinkedIn: /shanimcdonald
     </p>

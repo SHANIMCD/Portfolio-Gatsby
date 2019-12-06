@@ -1,8 +1,18 @@
 import React from 'react'
 
 export default () => (
-  <p>
-    Junior Developer | Tech Explorer | Bodybuilder
+  <div className="statement">
+    <p>
+    Junior Developer
+    </p>
+    <p>
+    Tech Explorer
+    </p>
+    <p>
+    Bodybuilder
+    </p>
+  </div>
 
-  </p>
 )
+  
+  
