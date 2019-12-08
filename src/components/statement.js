@@ -2,17 +2,22 @@ import React from 'react'
 
 export default () => (
   <div className="statement">
-    <p>
-    Junior Developer
+    <div className="flip-container">
+      <div className="flipper">
+        <p className="flip-1">
+          Junior Developer
     </p>
-    <p>
-    Tech Explorer
+        <p className="flip-2" >
+          Tech Explorer
     </p>
-    <p>
-    Bodybuilder
+        <p className="flip-3" >
+          Bodybuilder
     </p>
+      </div>
+    </div>
+
+
   </div>
 
 )
-  
-  
+

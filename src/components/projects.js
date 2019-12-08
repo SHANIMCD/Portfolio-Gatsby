@@ -15,49 +15,55 @@ import React from 'react'
 
 export default () => (
   <div className="projects-section">
-
+    <h1>Projects</h1>
   <div className="project-container">
-    <h2 className="project-title">Snake Game</h2>
+    <div className="project-header-box">
+    <img className="project-image" src="https://i.imgur.com/FKWoPWjm.png"/>
+    <h2 className="project-title">Snake Game <a target="blank" href="https://github.com/shanimcd"><i class="devicon-github-plain colored"></i></a></h2>
+    </div>
     <h3 className="project-duration">Timeframe: 1 week</h3>
-    <p className="project-tools-used">HTML, CSS, JavaScript </p>
+    <p className="project-tools-used">HTML, CSS, JavaScript</p>
     <p className="project-comment">This was my first project with General Assembly. 
-    We had just completed a week of JavaScript and the task was to create a game using only vanilla JavaScript with the styling of our choice.</p>
-    <p className="project-link">The project is deployed live <a href="">here</a></p>
+     A snake game created with vanilla JavaScript with the styling of our choice.</p>
   </div>
   <div className="project-container">
-    <h2 className="project-title">Gig On A Map - React-Athon</h2>
+    <div className="project-header-box">
+    <img className="project-image" src="https://i.imgur.com/xURnFuTm.png"/>
+    <h2 className="project-title">Gig On A Map <a target="blank" href="http://gigonamap.herokuapp.com/"><i class="devicon-github-plain colored"></i></a> </h2>
+    </div>
     <h3 className="project-duration">Timeframe: Two Days</h3>
     <p className="project-tools-used">Reactjs</p>
     <p className="project-comment">
-      Based on our knowledge of API’s our task was to use a public API (or more if we preferred) of our choice and create a front end way of displaying them. 
-      Our project was a one-page app where we pulled in events from an events API and rendered them on a map. 
+      A one-page app where we pulled in events from an events API and rendered them on a map. 
       My role: finding the API, creating the get request and rendering the keys needed to the dropdown menu.
     </p>
-    <p className="project-link">The project is deployed live <a href="http://gigonamap.herokuapp.com/">here</a></p>
   </div>
   <div className="project-container">
+    <div className="project-header-box" >
+    <img className="project-image" src="https://i.imgur.com/BhcFk8Nm.png"/>
     <h2 className="project-title">Skill-Swap</h2>
+    </div>
     <h3 className="project-duration">Timeframe: 8 Days</h3>
     <p className="project-tools-used">
       MERN stack, Mongoose, Express, React & Node
     </p>
-    <p className="project-comment">Create a full-stack app with multiple components which can include external APIs or be created ourselves, following the MVC model with react. 
-    We were only given a readme file so had to start from the beginning for the first time.
-    My role: I worked more with the models, and how they are controlled which led into the seeding of the profiles since I knew the most about which fields of input would be required etc. 
-    Also, I did styling on the front page and rendered the only external API that we used on the page.
+    <p className="project-comment">A StackOverflow style platform for junior developers to ask their tech related questions
+      and contributors to host meetups to help juniors to teach a small group about a specific subject.
     </p>
-    <p className="project-link">The project is deployed live <a href="">here</a></p>
+    
   </div>
   <div className="project-container">
+    <div className="project-header-box">
+    <img className="project-image" src="https://i.imgur.com/oeiqGWom.png"/>
     <h2 className="project-title">The Fitness Space</h2>
+    </div>
     <h3 className="project-duration">Timeframe: 1 Week</h3>
     <p className="project-tools-used">Python, Django, ReactJs & Nodejs</p>
     <p className="project-comment">
     A web app that displays gyms specialising in a particular discipline. 
     My three disciplines were Bodybuilding, Pilates and CrossFit. 
-    I used the framework Django for creation of the models, serializers and managing the back end and used ReactJs for the front end.
     </p>
-    <p className="project-link">The project is deployed live <a href="">here</a></p>
+
   </div>
    
   </div>

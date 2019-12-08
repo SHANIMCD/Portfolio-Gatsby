@@ -6,6 +6,8 @@ import Projects from '../components/projects'
 import SkillsList from '../components/skillslist'
 import Aboutme from '../components/aboutme'
 import Nav from '../components/nav'
+import ReactDOM from 'react-dom'
+
 
 import Footer from '../components/footer'
 
@@ -28,14 +30,16 @@ export default () => (
 
     </section>
 
-    <section className="projects">
-      <div className="about-me-section">
+    <section className="right-side">
+      <div id="top" className="about-me-section">
         <Aboutme />
       </div>
-      <div className="skills-section">
+      <div id="skills" className="skills-section">
         <SkillsList />
       </div>
+      <div id="to-projects" className="projects">
       <Projects />
+      </div>
     </section>
 
   </div>

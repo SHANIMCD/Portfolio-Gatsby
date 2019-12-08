@@ -3,7 +3,7 @@ import React from 'react'
 
 export default () => (
   <div className="skillz">
-    <h1>Tools Used: </h1> 
+    <h1>Tools I have worked with: </h1> 
     <div className="icons">
     <i class="devicon-javascript-plain colored"></i>
     <i class="devicon-css3-plain colored"></i>
