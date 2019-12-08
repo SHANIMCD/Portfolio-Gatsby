@@ -1,5 +1,5 @@
 import React from 'react'
 
 export default () => (
-  <p>Made with love by Shani McDonald  </p>
+  <p>Made with ❤️ by Shani McDonald  </p>
 )

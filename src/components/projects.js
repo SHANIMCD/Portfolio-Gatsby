@@ -14,8 +14,11 @@ import React from 'react'
 
 
 export default () => (
-  <div className="projects-section">
-    <h1>Projects</h1>
+  <>
+  <div>
+    <h1 className="projects-title">Projects</h1>
+  </div>
+  <div className="projects-section"> 
   <div className="project-container">
     <div className="project-header-box">
     <img className="project-image" src="https://i.imgur.com/FKWoPWjm.png"/>
@@ -67,6 +70,7 @@ export default () => (
   </div>
    
   </div>
+  </>
 )
 
 

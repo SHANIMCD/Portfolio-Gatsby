@@ -52,18 +52,18 @@ a:hover {
 
 .nav-tings {
   position: fixed;
-  display: flex;
+  /* display: flex; */
   /* overflow: hidden; */
-  /* top: 0; */
-  /* left: 0; */
+  /* top: 0; */ 
+  /* right: 0; */
   padding-top: 1%;
-  /* padding-left: 2%; */
+  padding-right: 2%;
 }
 
 .nav-list {
   display: flex;
-  /* align-items: space-between; */
-  /* margin-right: 30%;  */
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 
@@ -103,13 +103,16 @@ color: black;
   color: white;
 }
 
+.nav-list p {
+  color: white;
+}
+
 .statement {
   display: flex;
   align-content: center;
   /* position: relative; */
   /* position: fixed; */
-  top: 20px
-  
+  top: 20px;  
 }
 
 
@@ -170,6 +173,8 @@ color: black;
   /* height: 40vh; */
   display: flex;
   /* justify-content: flex-end; */
+  margin-right: 3%;
+  
 }
 
 .projects-section {
@@ -177,7 +182,11 @@ color: black;
   flex-wrap: wrap;
   justify-content: space-around;
   
- 
+}
+
+
+.projects-title {
+  color: white;
 }
 
 /* individual container named on the project component */
@@ -244,11 +253,30 @@ color: black;
   flex-direction: column;
   justify-content: center;
   padding-right: 5%;
+  /* background-image: url('https://cdn140.picsart.com/236732937035201.gif?r1024x1024'); */
 }
 
+.about-me-container {
+  border: 12px solid #252627;
+  padding: 1%;
+  background-color: black;
+}
+
+.about-me-container p {
+  color: white;
+  font-size: 17px;
+  text-align: center;
+}
 
 .skills-section {
   height: 30vh;
+}
+
+.skillz {
+  border: 12px solid #252627;
+  padding: 1%;
+  padding-bottom: 5%;
+  margin-right: 3%;
 }
 
 .icons {
