@@ -9,6 +9,8 @@
 /* DEVICONS file for Skills component */
 @import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
 
+/* animate CSS */
+@import url('https://raw.githubusercontent.com/daneden/animate.css/master/animate.css');
 
 body {
   text-decoration: none;
@@ -49,15 +51,20 @@ a:hover {
   background-color: yellow;
 }
 
+.about-me-header {
+  text-align: center;
+  margin-top: 1%;
+}
 
 .nav-tings {
   position: fixed;
+  text-align: center;
   /* display: flex; */
   /* overflow: hidden; */
   /* top: 0; */ 
-  /* right: 0; */
+  /* left: 0; */
   padding-top: 1%;
-  padding-right: 2%;
+  /* padding-right: 2%; */
 }
 
 .nav-list {
@@ -87,9 +94,17 @@ a:hover {
 /* div in header comoponent */
 .header {
   /* position: fixed; */
-  font-size: 40px;
-  
+  font-size: 43px;
+  color: white;
+  /* border: 1px solid white; */
+  background-color: black;  
+  /* padding: 1%; */
 }
+
+.header-h1 {
+  margin: 0;
+}
+
 
 .nav-tings, .statement p   {
   color: black;
@@ -109,47 +124,33 @@ color: black;
 
 .statement {
   display: flex;
-  align-content: center;
+  justify-content: center;
   /* position: relative; */
   /* position: fixed; */
-  top: 20px;  
-}
-
-
-/* Statements Animation */
-
-.flip-container {
-  perspective: 1000;
-  transform: perspective(1000px);
-  transform-style: preserve-3d;
-}
-
-
-.flip-container:hover .flip-1, .flip-container.flip-container:focus .flip-2 {
-  transform: rotateY(180deg);
+  /* top: 20px;   */
+  background-color: black;
 }
 
 .flipper {
-  transition: 0.6s;
-  transform-style: preserve-3d; 
+  display: flex;
+  justify-content: space-between;
 }
 
-
-.flip-1, .flip-2 {
-  backface-visibility: hidden;
-  transition: 0.6s;
-  transform-style: preserve-3d;
+.flipper p {
+  color: white;
+  font-size: 10px;
 }
+/* Statements Animation */
 
+  .flipper p:hover {
+    
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInX;
+    animation-name: flipInX;
+    animation: 4s flipInX;
+  }
 
-.flip-1 {
-  transform: rotateY(0deg);
-  z-index: 2;
-}
-
-.flip-2 {
-  transform: rotateY(-180deg)
-}
+  
 
 
 
@@ -221,9 +222,13 @@ color: black;
   /* align-items: center;  */
   z-index: 1;
   transform: translateY(200px);
-  background-color: black;
+  background-color: gray;
   padding-bottom: 10%;
 }
+
+/* .project-title:hover {
+  background-color: gray;
+} */
 
 .project-duration {
   line-height: 20px;
@@ -237,12 +242,23 @@ color: black;
   bottom: 0;
   width: 100%;
   text-align: center;
+  background-color: black;
+  padding-top: 1%;
+  padding-bottom: 1.5%;
+  /* border: 1px white solid; */
+  width: 30%;
+  background-color: gray;
 }
 
 /* Handles are in footer section*/
-/* .handles {
-  
-} */
+
+.handles a {
+  text-decoration: none;
+}
+
+.handles, .handles-linkedIn-logo:visited {
+color: white;
+}
 
 .about-me-section {
   height: 100vh;
@@ -285,5 +301,5 @@ color: black;
  justify-content: center;
 }
 i {
-  font-size: 50px;
+  font-size: 45px;
 }

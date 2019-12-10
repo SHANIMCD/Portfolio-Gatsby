@@ -10,7 +10,7 @@ import Nav from '../components/nav'
 
 import Footer from '../components/footer'
 
-
+import '../styles/animate.css'
 import '../styles/global.css'
 
 export default () => (
@@ -21,10 +21,10 @@ export default () => (
       <Nav />
     </div>
       <Header />
-      <Statement />
+      {/* <Statement /> */}
       <section className="footer-section">
         <Handles />
-        <Footer />
+        {/* <Footer /> */}
       </section>
 
     </section>

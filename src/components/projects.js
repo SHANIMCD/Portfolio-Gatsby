@@ -43,8 +43,8 @@ export default () => (
   </div>
   <div className="project-container">
     <div className="project-header-box" >
-    <img className="project-image" src="https://i.imgur.com/BhcFk8Nm.png"/>
-    <h2 className="project-title">Skill-Swap</h2>
+    <img className="project-image" src="https://i.imgur.com/5pKDbvcm.png"/>
+    <h2 className="project-title">Skill-Swap <a target="blank" href="https://github.com/SHANIMCD/project-03"><i class="devicon-github-plain colored"></i></a></h2>
     </div>
     <h3 className="project-duration">Timeframe: 8 Days</h3>
     <p className="project-tools-used">
