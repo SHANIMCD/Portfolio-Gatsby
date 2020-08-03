@@ -19,6 +19,9 @@ export default () => (
     <i class="devicon-webpack-plain colored"></i>
     <i class="devicon-html5-plain-wordmark colored"></i>
     <i class="devicon-git-plain-wordmark colored"></i>
+    <i class="devicon-java-plain-wordmark colored"></i>
+    <i class="devicon-intellij-plain-wordmark colored"></i>
+    <i class="devicon-docker-plain-wordmark colored"></i>
     </div>
   </div>
 )

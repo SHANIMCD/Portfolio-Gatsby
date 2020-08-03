@@ -1,19 +1,14 @@
 import React from 'react'
 import Link from 'gatsby'
 import projects from './projects'
-// import { Route, Switch } from 'react-router-dom'
+
 
 export default () => (   
   <div className="nav-list">
-
-    <p>#Top </p>
-    <p>#Skills </p>
-    <p>#Projects </p>
+    <p><a href="#top" >Top</a></p>
+    <p><a href="#to-projects">Projects</a></p>
   </div>
 
 )
 
 
-{/* <Switch>
-      <Route path="/projects" component={projects}>Projects</Route>
-    </Switch> */}

@@ -1,28 +1,37 @@
 import React from 'react'
 
-
-// class projects {
-//   constructor () {
-//     projectTitle = '',
-//     this.projectTask = '',
-//     this.projectDuration = '',
-//     this.projectToolsUsed = '',
-//     this.projectComment = '',
-//     this.projectLink = ''
-//   }
-// }
-
-
 export default () => (
   <>
   <div>
     <h1 className="projects-title">Projects</h1>
   </div>
   <div className="projects-section"> 
+
+  <div className="project-container">
+    <div className="project-header-box">
+      <img className="project-image" src="https://i.imgur.com/24Xbld5m.png" />
+      <h2 className="project-title"> Secret Cinema<a target="blank" href="https://github.com/SHANIMCD/GroupProject"><i class="devicon-github-plain colored"></i></a></h2>
+    </div>
+    <h3 className="project-duration">Timeframe: 2 weeks</h3>
+    <p className="project-tools-used">Tools: MongoDB, Express, ReactJS, Nodejs & Jira</p>
+    <p className="project-comment">This was our final project using the MERN stack. A cinema web app that shows movie listing and simulates booking a ticket using Paypal.</p>
+  </div>
+
+  <div className="project-container">
+    <div className="project-header-box">
+      <img className="project-image" src="https://i.imgur.com/iuyhMXWm.png" />
+      <h2 className="project-title"> Workout Builder<a target="blank" href="https://github.com/SHANIMCD/Project2SM-BE"><i class="devicon-github-plain colored"></i></a></h2>
+    </div>
+    <h3 className="project-duration">Timeframe: 2 weeks</h3>
+    <p className="project-tools-used">Tools: Spring Tools Service, Mockito, SQL, JavaScript, HTML, CSS</p>
+    <p className="project-comment">This was my first solo project with QA consulting 
+     A project that allows you to create a workout then build it with exercises.</p>
+  </div>
+
   <div className="project-container">
     <div className="project-header-box">
     <img className="project-image" src="https://i.imgur.com/FKWoPWjm.png"/>
-    <h2 className="project-title">Snake Game <a target="blank" href="https://github.com/shanimcd"><i class="devicon-github-plain colored"></i></a></h2>
+    <h2 className="project-title">Snake Game <a target="blank" href="https://github.com/SHANIMCD/project-01"><i class="devicon-github-plain colored"></i></a></h2>
     </div>
     <h3 className="project-duration">Timeframe: 1 week</h3>
     <p className="project-tools-used">HTML, CSS, JavaScript</p>
@@ -43,8 +52,8 @@ export default () => (
   </div>
   <div className="project-container">
     <div className="project-header-box" >
-    <img className="project-image" src="https://i.imgur.com/BhcFk8Nm.png"/>
-    <h2 className="project-title">Skill-Swap</h2>
+    <img className="project-image" src="https://i.imgur.com/5pKDbvcm.png"/>
+    <h2 className="project-title">Skill-Swap <a target="blank" href="https://github.com/SHANIMCD/project-03"><i class="devicon-github-plain colored"></i></a></h2>
     </div>
     <h3 className="project-duration">Timeframe: 8 Days</h3>
     <p className="project-tools-used">
@@ -58,7 +67,7 @@ export default () => (
   <div className="project-container">
     <div className="project-header-box">
     <img className="project-image" src="https://i.imgur.com/oeiqGWom.png"/>
-    <h2 className="project-title">The Fitness Space</h2>
+    <h2 className="project-title">The Fitness Space <a target="blank" href="https://github.com/SHANIMCD/project-4"><i class="devicon-github-plain colored"></i></a></h2>
     </div>
     <h3 className="project-duration">Timeframe: 1 Week</h3>
     <p className="project-tools-used">Python, Django, ReactJs & Nodejs</p>

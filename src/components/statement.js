@@ -1,11 +1,12 @@
 import React from 'react'
 
 export default () => (
+
   <div className="statement">
     <div className="flip-container">
       <div className="flipper">
         <p className="flip-1">
-          Junior Developer
+          Software Engineer
     </p>
         <p className="flip-2" >
           Tech Explorer
