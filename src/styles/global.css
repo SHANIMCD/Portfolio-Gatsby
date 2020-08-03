@@ -12,14 +12,16 @@
 /* animate CSS */
 @import url('https://raw.githubusercontent.com/daneden/animate.css/master/animate.css');
 
+* {
+  scroll-behavior: smooth;
+}
 body {
   text-decoration: none;
   margin: 1%;
-  background-color: black;
+  background-color: rgba(245, 245, 245, 0.836);
   /* background-image: url('http://3.bp.blogspot.com/-Kt0EJ0tjwBo/UpYjb_6CxhI/AAAAAAAABDg/gIgLR8Q46kw/s1600/1385558067389.gif'); */
   /* background-repeat: no-repeat; */
   background-attachment: fixed;
-  background-position: center;
 }
 
 
@@ -28,49 +30,59 @@ h1 {
   font-family: 'Bebas Neue', cursive;
 }
 
-h2, h3 {
+h2 {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   margin: 0;
   color: white;
 }
 
+h3 {
+  color: #485b7e;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+}
+
 
 /* All P elements */
 p {
   font-family: 'Montserrat', sans-serif;
-  color: white;
+  color: #485b7e;
 }
 
 
 a:visited {
-  color: white;
+  color: #485b7e;
 }
 
 a:hover {
   background-color: yellow;
 }
 
-.about-me-header {
-  text-align: center;
-  margin-top: 1%;
+.nav-tings:hover {
+  opacity: 1;
 }
 
 .nav-tings {
-  position: fixed;
-  text-align: center;
-  /* display: flex; */
-  /* overflow: hidden; */
-  /* top: 0; */ 
-  /* left: 0; */
-  padding-top: 1%;
-  /* padding-right: 2%; */
+opacity: 0.5;
+border-top: 1px solid #485b7e;
+border-bottom: 1px solid #485b7e;
+background-color: #8c94a3;
+background-blend-mode: overlay;
+padding: 2px;
+position: fixed;
+display: flex;
+top: 40px;
+right: 3vmax;
+z-index: 2;
+
 }
 
 .nav-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  font-weight: 900;
+  font-size: 15px;
+  text-align: center;
 }
 
 
@@ -81,7 +93,8 @@ a:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  background-image: url('http://3.bp.blogspot.com/-Kt0EJ0tjwBo/UpYjb_6CxhI/AAAAAAAABDg/gIgLR8Q46kw/s1600/1385558067389.gif');
+  background-image: url('https://media.giphy.com/media/l3vRkNRhHpIzXLMAM/giphy.gif');
+  /* background-image: url('http://3.bp.blogspot.com/-Kt0EJ0tjwBo/UpYjb_6CxhI/AAAAAAAABDg/gIgLR8Q46kw/s1600/1385558067389.gif'); */
   /* background-color: white; */
   /* background-repeat: no-repeat; */
   background-attachment: fixed;
@@ -97,7 +110,7 @@ a:hover {
   font-size: 43px;
   color: white;
   /* border: 1px solid white; */
-  background-color: black;  
+  background-color: #485b7e;  
   /* padding: 1%; */
 }
 
@@ -115,21 +128,21 @@ color: black;
 }
 
 .skills-section, .skillz h1 {
-  color: white;
+  color: #485b7e;
 }
 
-.nav-list p {
+
+.nav-list a {
   color: white;
+  text-decoration: none;
 }
 
 .statement {
   display: flex;
   justify-content: center;
-  /* position: relative; */
-  /* position: fixed; */
-  /* top: 20px;   */
-  background-color: black;
+  background-color: #485b7e;
 }
+
 
 .flipper {
   display: flex;
@@ -138,22 +151,10 @@ color: black;
 
 .flipper p {
   color: white;
+  margin: 5px;
   font-size: 10px;
 }
-/* Statements Animation */
-
-  .flipper p:hover {
-    
-    backface-visibility: visible !important;
-    -webkit-animation-name: flipInX;
-    animation-name: flipInX;
-    animation: 4s flipInX;
-  }
-
   
-
-
-
 /*---Projects section-----*/
 
 /* named on index.js page */
@@ -163,17 +164,14 @@ color: black;
   flex-direction: column;
   float: right;
   width: 65%;
-  /* height: 40vh; */
   display: flex;
-  /* justify-content: flex-end; */
+  
 }
 
 .projects {
   position: relative;
   float: right;
-  /* height: 40vh; */
   display: flex;
-  /* justify-content: flex-end; */
   margin-right: 3%;
   
 }
@@ -187,22 +185,18 @@ color: black;
 
 
 .projects-title {
-  color: white;
+  color: #485b7e;
 }
 
 /* individual container named on the project component */
 .project-container {
-  /* border: 1px solid black;  */
-  /* width: 50vw; */
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  /* padding: 0.5%; */
   width: 350px;
   transition: 3s ease-out;
   line-height: 15px;
   padding: 0;
-  /* background-color: white; */
   
 }
 
@@ -218,36 +212,26 @@ color: black;
   background-position: center center;
   position: relative;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center;  */
   z-index: 1;
   transform: translateY(200px);
-  background-color: gray;
+  transition-duration: 500ms;
+  background-color: #8c94a3;
   padding-bottom: 10%;
 }
 
-/* .project-title:hover {
-  background-color: gray;
-} */
 
 .project-duration {
   line-height: 20px;
 }
 
 
-
 /* named on the index.js page*/
 .footer-section {
-  position: fixed;
   bottom: 0;
-  width: 100%;
+  width: fit-content;
   text-align: center;
-  background-color: black;
-  padding-top: 1%;
+  padding-top: 0.5%;
   padding-bottom: 1.5%;
-  /* border: 1px white solid; */
-  width: 30%;
-  background-color: gray;
 }
 
 /* Handles are in footer section*/
@@ -260,6 +244,10 @@ color: black;
 color: white;
 }
 
+.handles p {
+  margin-top: 0;
+}
+
 .about-me-section {
   height: 100vh;
   line-height: 100%;
@@ -269,17 +257,22 @@ color: white;
   flex-direction: column;
   justify-content: center;
   padding-right: 5%;
-  /* background-image: url('https://cdn140.picsart.com/236732937035201.gif?r1024x1024'); */
+}
+
+.about-me-header {
+  text-align: center;
+  margin-top: 1%;
+  color: #485b7e
 }
 
 .about-me-container {
-  border: 12px solid #252627;
+  border: 12px solid #485b7e;
   padding: 1%;
-  background-color: black;
+  background-color: #e3cec2;
 }
 
 .about-me-container p {
-  color: white;
+  color: #485b7e;
   font-size: 17px;
   text-align: center;
 }
@@ -289,7 +282,8 @@ color: white;
 }
 
 .skillz {
-  border: 12px solid #252627;
+  border: 12px solid #485b7e;
+  background-color: #e3cec2;
   padding: 1%;
   padding-bottom: 5%;
   margin-right: 3%;
@@ -302,4 +296,45 @@ color: white;
 }
 i {
   font-size: 45px;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 700px) {
+
+  .project-container {
+    padding: unset;
+    margin: 10px;
+    border: 2px black solid;
+    padding: 5px;
+  }
+
+
+  .projects {
+    padding-top: 50px;
+    float: left;
+  }
+
+  .project-header-box {
+    transform: unset;
+  }
+  
+
+  .right-side {
+    float: unset;
+    width: 100vw;
+  }
+  
+
+  .header-section {
+   width: 100vw;
+   position: unset;
+  }
+  .projects-title {
+    color: #485b7e;
+    display: none;
+  }
+
+
 }
