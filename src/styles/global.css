@@ -14,6 +14,7 @@
 
 * {
   scroll-behavior: smooth;
+  margin-bottom: 5px;
 }
 body {
   text-decoration: none;
@@ -165,27 +166,21 @@ color: black;
   float: right;
   width: 65%;
   display: flex;
-  
 }
 
-.projects {
-  position: relative;
-  float: right;
-  display: flex;
-  margin-right: 3%;
-  
-}
 
 .projects-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  
 }
 
 
 .projects-title {
   color: #485b7e;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 50px;
 }
 
 /* individual container named on the project component */
@@ -194,14 +189,17 @@ color: black;
   flex-wrap: wrap;
   flex-direction: column;
   width: 350px;
-  transition: 3s ease-out;
-  line-height: 15px;
+  /* transition: 3s ease-out; */
+  /* line-height: 15px; */
+  /* margin-top: 70px; */
+  margin-bottom: 85px;
   padding: 0;
   
 }
 
 .project-container:hover .project-header-box {
-  transform: translateY(0);
+  transform: rotateY(180deg);
+  transition-duration: 800ms;
   padding-bottom: 0;
 }
 
@@ -209,26 +207,27 @@ color: black;
   display: flex;
   flex-direction: column;
   background-size: cover;
-  background-position: center center;
-  position: relative;
-  display: flex;
+  position: absolute;
   z-index: 1;
-  transform: translateY(200px);
   transition-duration: 500ms;
   background-color: #8c94a3;
-  padding-bottom: 10%;
+  backface-visibility: hidden;
+  width: 360px;
 }
 
+.project-title {
+  margin: 0 auto;
+  padding: 15px 0;
+}
 
 .project-duration {
   line-height: 20px;
 }
 
-
 /* named on the index.js page*/
 .footer-section {
   bottom: 0;
-  width: fit-content;
+  width: 100%;
   text-align: center;
   padding-top: 0.5%;
   padding-bottom: 1.5%;
@@ -304,10 +303,9 @@ i {
 @media only screen and (max-width: 700px) {
 
   .project-container {
-    padding: unset;
-    margin: 10px;
-    border: 2px black solid;
-    padding: 5px;
+    margin: 50px 0;
+    /* border: 2px black solid; */
+    /* padding: 5px; */
   }
 
 
